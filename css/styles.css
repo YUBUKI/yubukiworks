@@ -288,6 +288,9 @@ section {
     width: 16px !important;
     display: inline;
 }
+#profile #details i {
+    color: #000;
+}
 
 #profile #task {
     flex: 1;
