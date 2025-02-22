@@ -117,12 +117,6 @@ header .logo {
     padding: 0 10px 15px 35px;
 }
 
-#profile #details dd:last-child {
-    border: none;
-}
-
-
-
 #profile #task {
     clear: both;
     display: block;
