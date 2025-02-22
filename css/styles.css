@@ -282,6 +282,12 @@ section {
 #profile #details dd {
     width: calc(100% - 36%);
 }
+
+#profile #details dt:last-of-type,
+#profile #details dd:last-of-type {
+    border: none !important;
+}
+
 #profile #details .thlogo {
     position: relative;
     top: 3px;
