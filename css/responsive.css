@@ -23,10 +23,19 @@
 
 header .logo {
     display: inline-block;
-    height: 26px;
-    margin: 20px auto 0 auto;
+    height: 20px;
+    margin: 30px auto 0 auto;
 }
 
+nav {
+    margin: 26px auto 0px auto;
+    text-align: center;
+}
+nav a {
+    width: 28%;
+    padding: 3px 10px;
+    text-align: center;
+}
 
 /****************************************
 
@@ -35,11 +44,11 @@ header .logo {
 *****************************************/
 
 #works {
-    margin: 30px 10px 0px 10px;
+    margin: 20px 10px 0px 10px;
 }
 
 #works #modal {
-    width: 42%;
+    width: 43%;
     margin: 15px 10px 0;
 }
     
@@ -91,6 +100,7 @@ header .logo {
 #profile #details {
     width: 100%;
     margin: 0 0 30px 0;
+    border: none;
 }
 
 #profile #details h1 {
@@ -107,20 +117,20 @@ header .logo {
 #profile #details dt {
     width: 100%;
     margin: 0;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 6px 0px;
     border: none;
     font-weight: bold;
 }
 #profile #details dd {
     width: 100%;
     margin: 0 0 5px 0;
-    padding: 0 10px 15px 35px;
+    padding: 0 10px 15px 20px;
 }
 
 #profile #task {
     clear: both;
     display: block;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 2px;
 }
 
@@ -131,10 +141,10 @@ header .logo {
 }
 
 #profile #task ul {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 10px;
 }
 #profile #task li {
-    margin: 0 0 15px 0;
+    margin: 0 0 25px 0;
 }
 #profile #task i {
     width: 20px;
@@ -151,9 +161,6 @@ nav a {
     font-size: 10px;
 }
 
-.navi a.on {
-    color: #555 !important;
-}
 .navi span {
     font-size: 8px;
     color: #ccc;
