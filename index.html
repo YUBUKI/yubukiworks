@@ -5,8 +5,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index,follow">
-    <link href="css/styles.css" media="all" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="icon" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
@@ -30,45 +31,46 @@
 
 <body>
     <header class="navi">
-        <a href="/" class="logo scr-target"><img src="images/logo.png" alt="YUBUKI WORKS"></a>
+        <a href="/" class="logo">
+            <img src="images/logo.png" alt="YUBUKI WORKS">
+            <span>とあるWebクリエイターのポートフォリオ</span>
+        </a>
         <nav>
             <a href="/" class="on scr-target">WORKS</a>
-            <span class="scr-target"> / </span>
             <a href="/profile" class="scr-target">PROFILE</a>
-            <!-- span class="scr-target"> / </span>
-            <a href="CONTACT" class="scr-target">CONTACT</a -->
+            <a href="/contact" class="scr-target">CONTACT</a>
         </nav>
     </header>
 
     <section id="works">
         
         <div id="modal" class="scr-target">
-            <a href="#modal_01" class="btn"><img src="images/ws_ybshd.jpg"></a>
+            <a href="#modal_01" class="btn"><img src="images/ws_hd.jpg"></a>
             <div class="remodal" data-remodal-id="modal_01">
                 <div>
-                    <img src="images/ws_ybshd.jpg" alt="企業サイト">
+                    <img src="images/ws_hd.jpg" alt="企業サイト">
                     <div class="mark">
                         <span class="wdesign">Webデザイン</span>
                         <span class="coding">コーディング</span>
                         <span class="cms">CMS構築</span>
                     </div>
-                    <p>https://www.ybs-group.co.jp</p>
+                    <p>企業サイト</p>
                 </div>
                 <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
         
         <div id="modal" class="scr-target">
-            <a href="#modal_02" class="btn"><img src="images/ws_mirai.jpg"></a>
+            <a href="#modal_02" class="btn"><img src="images/ws_zaidan.jpg"></a>
             <div class="remodal" data-remodal-id="modal_02">
                 <div>
-                    <img src="images/ws_mirai.jpg" alt="企業サイト">
+                    <img src="images/ws_zaidan.jpg" alt="企業サイト">
                     <div class="mark">
                         <span class="wdesign">Webデザイン</span>
                         <span class="coding">コーディング</span>
                         <span class="cms">CMS構築</span>
                     </div>
-                    <p>https://www.ybs-miraizaidan.or.jp</p>
+                    <p>団体サイト</p>
                 </div>
                 <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -84,23 +86,23 @@
                         <span class="coding">コーディング</span>
                         <span class="cms">CMS構築</span>
                     </div>
-                    <p>https://www.yokobo-soko.com</p>
+                    <p>企業サイト</p>
                 </div>
                 <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
         
         <div id="modal" class="scr-target">
-            <a href="#modal_04" class="btn"><img src="images/ws_green.jpg"></a>
+            <a href="#modal_04" class="btn"><img src="images/ws_growth.jpg"></a>
             <div class="remodal" data-remodal-id="modal_04">
                 <div>
-                    <img src="images/ws_green.jpg" alt="サービスサイト">
+                    <img src="images/ws_growth.jpg" alt="物流サービスサイト">
                     <div class="mark">
                         <span class="wdesign">Webデザイン</span>
                         <span class="coding">コーディング</span>
                         <span class="cms">CMS構築</span>
                     </div>
-                    <p>https://www.greenpartnership.jp</p>
+                    <p>物流サービス</p>
                 </div>
                 <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -116,39 +118,7 @@
                         <span class="coding">コーディング</span>
                         <span class="cms">ECサイト構築</span>
                     </div>
-                    <p>https://www.snowpreciousdiamond.jp</p>
-                </div>
-                <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-        </div>
-        
-        <div id="modal" class="scr-target">
-            <a href="#modal_06" class="btn"><img src="images/ws_vnt.jpg"></a>
-            <div class="remodal" data-remodal-id="modal_06">
-                <div>
-                    <img src="images/ws_vnt.jpg" alt="企業サイト">
-                    <div class="mark">
-                        <span class="wdesign">Webデザイン</span>
-                        <span class="coding">コーディング</span>
-                        <span class="cms">CMS構築</span>
-                    </div>
-                    <p>https://www.vnt.jp</p>
-                </div>
-                <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-        </div>
-        
-        <div id="modal" class="scr-target">
-            <a href="#modal_07" class="btn"><img src="images/ws_TG.jpg"></a>
-            <div class="remodal" data-remodal-id="modal_07">
-                <div>
-                    <img src="images/ws_TG.jpg" alt="企業サイト">
-                    <div class="mark">
-                        <span class="wdesign">Webデザイン</span>
-                        <span class="coding">コーディング</span>
-                        <span class="cms">CMS構築</span>
-                    </div>
-                    <p>https://www.tour-g.co.jp/</p>
+                    <p>指輪販売サイト</p>
                 </div>
                 <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
             </div>
@@ -164,60 +134,45 @@
                         <span class="coding">コーディング</span>
                         <span class="cms">CMS構築</span>
                     </div>
-                    <p>https://www.sorakodo.jp</p>
+                    <p>保育園サイト</p>
+                </div>
+                <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        
+        <div id="modal" class="scr-target">
+            <a href="#modal_10" class="btn"><img src="images/ws_rings.jpg"></a>
+            <div class="remodal" data-remodal-id="modal_10">
+                <div>
+                    <img src="images/ws_rings.jpg" alt="企業サイト">
+                    <div class="mark">
+                        <span class="wdesign">Webデザイン</span>
+                        <span class="coding">コーディング</span>
+                        <span class="cms">CMS構築</span>
+                    </div>
+                    <p>企業サイト</p>
                 </div>
                 <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
 
         <div id="modal" class="scr-target">
-            <a href="#modal_09" class="btn"><img src="images/ws_gojo.jpg"></a>
-            <div class="remodal" data-remodal-id="modal_09">
+            <a href="#modal_06" class="btn"><img src="images/ws_vnt.jpg"></a>
+            <div class="remodal" data-remodal-id="modal_06">
                 <div>
-                    <img src="images/ws_gojo.jpg" alt="企業サイト">
+                    <img src="images/ws_vnt.jpg" alt="企業サイト">
                     <div class="mark">
                         <span class="wdesign">Webデザイン</span>
                         <span class="coding">コーディング</span>
                         <span class="cms">CMS構築</span>
                     </div>
-                    <p>https://www.gojo.co.jp</p>
+                    <p>企業サイト</p>
                 </div>
                 <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
         
-        <div id="modal" class="scr-target">
-            <a href="#modal_10" class="btn"><img src="images/ws_ecmis.jpg"></a>
-            <div class="remodal" data-remodal-id="modal_10">
-                <div>
-                    <img src="images/ws_ecmis.jpg" alt="企業サイト">
-                    <div class="mark">
-                        <span class="wdesign">Webデザイン</span>
-                        <span class="coding">コーディング</span>
-                        <span class="cms">CMS構築</span>
-                    </div>
-                    <p>https://www.ecmis.jp</p>
-                </div>
-                <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-        </div>
-        
-        <div id="modal" class="scr-target">
-            <a href="#modal_11" class="btn"><img src="images/ws_labs.jpg"></a>
-            <div class="remodal" data-remodal-id="modal_11">
-                <div>
-                    <img src="images/ws_labs.jpg" alt="企業サイト">
-                    <div class="mark">
-                        <span class="wdesign">Webデザイン</span>
-                        <span class="coding">コーディング</span>
-                        <span class="cms">CMS構築</span>
-                        <span class="seo">SEO</span>
-                    </div>
-                    <p>https://www.connectylabs.com</p>
-                </div>
-                <button data-remodal-action="cancel" class="remodal-cancel"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-        </div>
+        <p class="note scr-target">※一部変更し掲載している実績や掲載できない実績もございます。ご連絡頂けましたら詳細をお送り致します。</p>
 
     </section>
     <section id="photos">
@@ -372,10 +327,8 @@
     
     <nav class="navi">
         <a href="/" class="on scr-target">WORKS</a>
-        <span class="scr-target"> / </span>
         <a href="/profile" class="scr-target">PROFILE</a>
-        <!-- span class="scr-target"> / </span>
-        <a href="CONTACT" class="scr-target">CONTACT</a -->
+        <a href="/contact" class="scr-target">CONTACT</a>
     </nav>
         
     <div id="totop" class="">
