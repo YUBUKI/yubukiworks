@@ -1,0 +1,654 @@
+/* A Modern CSS Reset */
+*,*::before,*::after{box-sizing:border-box}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}ul[role="list"],ol[role="list"]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;}input,button,textarea,select{font:inherit}@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+/****************************************
+
+		基本
+
+*****************************************/
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+section , article , footer , aside { display:block; }
+
+* {
+    margin:0;
+	padding:0;
+	border:none;
+	list-style:none;
+	text-decoration:none;
+}
+
+body {
+	background:#f8fafd;
+	letter-spacing:1px;
+	font:14px/1.7 'Noto Sans JP',"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif,"verdana";
+	color: #333;
+}
+
+main {
+    width: 70%;
+    margin: 30px auto 50px auto;
+}
+
+main#index h1,
+main#profile h1,
+span.position {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    padding: 4px 30px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #eee;
+    font-size: 0.5rem;
+    font-weight: normal;
+    color: #bbb;
+}
+
+a {
+    color: #19448e;
+    text-decoration: none;
+}
+
+.pc {
+    display: block;
+}
+.sp {
+    display: none;
+}
+
+.aright {
+    text-align: right;
+}
+.aleft {
+    text-align: left !important;
+}
+.acenter {
+    text-align:center;
+}
+
+
+/****************************************
+
+		ヘッダー
+
+*****************************************/
+
+header {
+    display: flex;
+}
+
+header a.logo {
+    display: inline-block;
+    margin: 20px 60px 0 20px;
+    text-align: center;
+}
+
+header a.logo img {
+    height: 16px;
+}
+
+header a.logo span {
+    display: block;
+    margin: -3px 0 0 0;
+    font-size: 0.5rem;
+    color: #ccc;
+}
+
+header nav {
+    padding: 20px;
+}
+
+header nav a {
+    margin: 0 30px 0 0;
+    font-weight: bold;
+    color: #333;
+}
+header nav a i {
+    color: #fab001;
+}
+header nav span {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #ccc;
+}
+
+
+/****************************************
+
+		INDEX / CATEGORY
+
+*****************************************/
+
+main#index li a {
+    position: relative;
+    display: flex;
+    margin: 0 0 20px 0;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+}
+main#index li a:hover {
+    border: 1px solid #aaa;
+}
+
+main#index li a .thum {
+    margin: 0 20px 0 0;
+}
+main#index li a .thum img {
+    width: 200px;
+    height: 100%;
+}
+
+main#index li a .list {
+    padding: 15px 0 0 0;
+}
+
+main#index li span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.55rem;
+    color: #ccc;
+}
+
+main#index li h2 {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.noarticles {
+    margin: 100px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+/****************************************
+
+		SINGLE
+
+*****************************************/
+
+/* FRAME */
+main#single {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+}
+
+/* HEADLINE */
+main#single h1 {
+    margin: 10px 0 30px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+main#single h1 span {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #ccc;
+}
+
+/* EYECATCH */
+main#single #eyecatch img {
+    margin: 30px 0 0 0;
+    border-radius: 6px;
+}
+
+/* ARTICLE */
+main#single article {
+    margin: 0 20px;
+}
+
+/* HEADLINE 2 */
+main#single h2 {
+    margin: 40px 0 25px 0;
+    padding: 40px 0 0 0;
+    border-top: 1px dotted #ddd;
+    font-size: 0.9rem;
+}
+
+/* TEXT */
+main#single p {
+    margin: 0 0 25px 0;
+    font-size: 0.8rem;
+}
+
+/* LIST */
+main#single ul {
+    margin: 0 0 25px 30px;
+    font-size: 0.8rem;
+}
+main#single li {
+    list-style: disc;
+    margin: 0 0 10px 0;
+}
+
+/* COMMENT */
+#comments {
+    width: 80%;
+    margin: 50px auto 30px auto;
+    padding: 20px;
+    background: #f8fafd;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+}
+
+main#single #comments h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border: none;
+    font-size: 0.7rem;
+}
+
+main#single #comments li {
+    list-style: none;
+}
+
+#comments .avatar {
+    margin: 0 10px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+#comments .comment-author {
+    display: inline;
+}
+
+#comments .comment-meta {
+    display: inline;
+}
+
+#comments .fn {
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+#comments .says {
+    display: none;
+}
+main#single #comments p {
+    margin: 20px 0 0 0;
+    font-size: 0.65rem;
+}
+
+#comments .reply {
+    margin: 10px 0 30px 0;
+    padding: 0 0 20px;
+    border-bottom: 1px dotted #ddd;
+    text-align: right;
+}
+#comments .reply a {
+    display: inline-block;
+    padding: 1px 15px;
+    border-radius: 2px;
+    background: #19448e;
+    color: #fff;
+}
+
+#reply-title {
+    font-size: 0.7rem;
+}
+.required-field-message {
+    display: none;
+}
+
+main#single .comment-form-comment,
+main#single .comment-form-author,
+main#single .comment-form-email, 
+main#single .comment-form-url {
+    display: flex;
+    align-items: anchor-center;
+    width: 90%;
+    margin: 20px auto 0 auto !important;
+    font-size: 0.65rem;
+}
+#commentform label {
+    width: 70px;
+    font-size: 0.6rem;
+    color: #999;
+}
+
+.comment-form-comment textarea,
+#commentform input[type="text"] {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+}
+#commentform input[type="text"] {
+    padding: 10px;
+}
+
+.comment-form-cookies-consent {
+    text-align: center;
+}
+.comment-form-cookies-consent input {
+    position: relative;
+    top: 2px;
+}
+
+.form-submit {
+    text-align: center;
+}
+.form-submit input[type="submit"] {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 2px;
+    background: #19448e;
+    color: #fff;
+}
+
+
+/****************************************
+
+		PROFILE
+
+*****************************************/
+
+#profile {
+    width: 50%;
+    margin: 50px auto 30px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+}
+
+#profile h2 {
+    margin: 10px 0 15px 0;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+#profile #profimg {
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+#profile #profimg img {
+    width: 90px;
+}
+
+#profile #intro {
+    margin: 0 20px 10px 20px;
+    font-size: 0.55rem;
+    color: #999;
+}
+
+#profile dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#profile dt,
+#profile dd {
+    display: inline-block;
+    padding: 20px 0;
+    border-bottom: 1px dotted #ddd;
+    vertical-align: top;
+    font-size: 0.6rem;
+}
+#profile dt {
+    width: 30%;
+    margin: 0 -7px 0 20px;
+}
+#profile dd {
+    width: calc(100% - 36%);
+}
+
+#profile #details dt:last-of-type,
+#profile #details dd:last-of-type {
+    border: none !important;
+}
+
+#profile #details i {
+    color: #000;
+}
+
+#profile .account img {
+    display: inline;
+    height: 26px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+#profile .account a:first-of-type img {
+    height: 20px;
+}
+
+
+/****************************************
+
+		CONTACT
+
+*****************************************/
+
+#contact {
+    display: block;
+    margin: 50px auto;
+}
+#contact .catch  {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.form {
+    width: 70%;
+    margin: 0 auto 60px auto;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.form dl {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.form dt {
+    width: 30%;
+    padding: 6px 0;
+    font-weight:bold;
+}
+
+.form dd {
+    width: 65%;
+    padding: 0px 10px 20px 10px;
+}
+
+.form dt span {
+    padding: 2px 0;
+    font-size: 14px;
+    color:#19448e;
+}
+
+.form input[type='text'],.form input[type='email'],.form input[type='tel'] {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background: #fafafa;
+    font-size:16px;
+}
+.form textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background: #fafafa;
+    font-size:16px;
+}
+
+.form label {
+    position: relative;
+    top: 7px;
+    cursor: pointer;
+}
+
+.form-actions {
+    margin:0 0 0 0;
+}
+.form .form-actions input {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 0;
+    background:#19448e;
+    border-radius: 3px;
+    border:1px solid #0A6CBF;
+    font-size: 15px;
+    font-weight:bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.form .form-actions input:hover {
+    border:1px solid #0A6CBF;
+    background:#fff;
+    color: #0A6CBF;
+}
+
+.wpcf7-list-item-label {
+    position: relative;
+    top: -1px;
+    left: 4px;
+}
+
+.screen-reader-response {
+    margin: 0 0 20px 0;
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+}
+.wpcf7-not-valid-tip {
+    color: brown;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pvdd {
+    position:relative;
+}
+.pvdd .wpcf7-not-valid-tip {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.auto {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+}
+
+.form dt p, .form dd p {
+    margin: 0;
+}
+
+.sent, .wpcf7-response-output,
+.wpcf7-f10-p11-o1-ve-your-message,
+.screen-reader-response ul {
+    display: none;
+}
+
+
+/****************************************
+
+		PRIVACY
+
+*****************************************/
+
+#privacy {
+    display: block;
+    width: 70%;
+    margin: 80px auto;
+}
+
+#privacy h1 {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+#privacy h2 {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+#privacy p {
+    margin: 0 0 20px 0;
+}
+
+#privacy ul {
+    margin: 0 0 20px 0;
+}
+#privacy li {
+    margin: 0 0 6px 30px;
+    list-style-type: disc;
+}
+
+.pvp {
+    font-size: 11px;
+    position: relative;
+    top: -19px;
+    left: 115px;
+}
+
+
+/****************************************
+
+		フッター
+
+*****************************************/
+
+#totop {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+#totop a {
+    position: relative;
+    top: 0;
+    display: block;
+    width: 32px;
+    line-height: 32px;
+    margin: auto;
+    border-radius: 2px;
+    background: #19448e;
+    transition: 0.2s;
+    color: #fff;
+}
+#totop a:hover {
+    top: -5px;
+}
+
+footer {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer span {
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+
+/* アニメーション設定 */
+.scr-target {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+}
+.scr-target.is-active {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0);
+    transition: 1.5s;
+}
