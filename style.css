@@ -228,6 +228,18 @@ main#single li {
     margin: 0 0 10px 0;
 }
 
+/* SHARE */
+main#single #share {
+    margin: 40px 0 0 0;
+    padding: 40px 0 0 0;
+    border-top: 1px dotted #ddd;
+    text-align: center;
+}
+main#single #share img {
+    width: 25px;
+    margin: 0 5px;
+}
+
 /* COMMENT */
 #comments {
     width: 80%;
