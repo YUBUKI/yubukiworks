@@ -44,6 +44,31 @@
             <?php the_content(); ?>
         </article>
         
+        <div id="listicle">
+        <?php
+            $categories = get_the_category();
+            if ( ! empty( $categories ) ) {
+                foreach ( $categories as $category ) {
+                    // カテゴリのスラッグで条件分岐
+                    if ( $category->slug === 'webdesign' ) {
+                        echo '<i class="fa-solid fa-code"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">Web制作の記事一覧</a>';
+                    } elseif ( $category->slug === 'photography' ) {
+                        echo '<i class="fa-solid fa-camera-retro"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">旅と写真の記事一覧</a>';
+                    } elseif ( $category->slug === 'freelance' ) {
+                        echo '<i class="fa-solid fa-laptop"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">自由な生き方の記事一覧</a>';
+                    } elseif ( $category->slug === 'chatgpt' ) {
+                        echo '<i class="fas fa-project-diagram"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">ChatPGTの記事一覧</a>';
+                    } elseif ( $category->slug === 'other' ) {
+                        echo '<i class="fa-solid fa-file-pen"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">その他の記事一覧</a>';
+                    } else {
+                        // どの条件にも当てはまらなかった場合（任意）
+                        echo '<p><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">▶ その他の記事を見る</a></p>';
+                    }
+                }
+            }
+        ?>
+        </div>
+
         <div id="share">
             <a href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>" target="_blank" rel="noopener noreferrer">
                 <img src="/wp-content/themes/YUBUKIWORKS/images/share_x.png" alt="Xへ投稿をシェアする">

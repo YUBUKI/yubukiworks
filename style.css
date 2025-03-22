@@ -228,6 +228,19 @@ main#single li {
     margin: 0 0 10px 0;
 }
 
+/* 記事一覧へ */
+main#single #listicle {
+    margin: 50px 0;
+    text-align: center;
+}
+main#single #listicle a {
+    font-weight: bold;
+    color: #333;
+}
+main#single #listicle i {
+    color: #fab001;
+}
+
 /* SHARE */
 main#single #share {
     margin: 40px 0 0 0;
@@ -674,6 +687,10 @@ footer span {
 
 @media (max-width: 1024px) {
 
+    body {
+        font-size:16px;
+    }
+
     header {
         display: block;
         text-align: center;
@@ -683,6 +700,140 @@ footer span {
     }
     
     header nav {
+        margin: 15px 0 0 0;;
+        padding: 0;
+    }
+    header nav a {
+        display: inline-block;;
+        margin: 0;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    main#index h1, main#profile h1, span.position {
+        position: relative;
+        top: 0;
+        margin: 0 0 20px 0;
+        padding: 0;
+        background: none;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto 50px auto;
+    }
+
+    main#index li a {
+        display: block;
+    }
+    main#index li a .thum {
+        margin: 0;
+    }
+    main#index li a .thum img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    main#index li a .list {
+        padding:5px 10px 0 10px;
+        font-size: 0.7rem;
+    }
+
+    main#index li span {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+    main#index li h2 {
+        padding: 3px 0px 10px 0;
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+    .position {
         display: none;
+    }
+
+    main#single h1 {
+        margin: 0;
+    }
+    main#single #eyecatch img {
+        margin: 10px 0 0 0;
+    }
+
+    main#single h2 {
+        margin: 20px 0 15px 0;
+        padding: 25px 0 0 0;
+        font-size: 1rem;
+    }
+
+    main#single article {
+        margin: 8px;
+    }
+
+    main#single p {
+        font-size: 0.9rem;
+    }
+
+    #comments {
+        width: 100%;
+        margin: 30px auto 30px auto;
+    }
+
+    main#single #comments p {
+        font-size: 0.8rem;
+    }
+    main#single .comment-form-comment, main#single .comment-form-author, main#single .comment-form-email, main#single .comment-form-url {
+        width: 100%;
+    }
+
+    #profile {
+        width: 93%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    main#profile h1 {
+        display: none;
+    }
+
+    #profile #intro {
+        margin: 0 10px 10px 10px;
+        font-size: 0.7rem;
+    }
+    #profile dt, #profile dd {
+        font-size: 0.8rem;
+    }
+    #profile dt {
+        margin: 0;
+        padding: 12px 0 12px 0;
+    }
+    #profile dd {
+        width: calc(100% - 32%);
+        padding: 12px 0 12px 20px;
+    }
+
+    #contact .catch {
+        margin: 0 0 20px 0;
+        font-size: 0.7rem;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+    }
+
+    .form dl {
+        display: block;
+    }
+    .form dt {
+        width: auto;
+    }
+    .form dd {
+        width: auto;
     }
 }
