@@ -209,13 +209,13 @@ main#single h2 {
     margin: 40px 0 25px 0;
     padding: 40px 0 0 0;
     border-top: 1px dotted #ddd;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 /* TEXT */
 main#single p {
     margin: 0 0 25px 0;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 /* LIST */
@@ -787,6 +787,15 @@ footer span {
         font-size: 0.8rem;
     }
     main#single .comment-form-comment, main#single .comment-form-author, main#single .comment-form-email, main#single .comment-form-url {
+        display: block;
+        width: 100%;
+    }
+
+    #commentform label {
+        font-size: 0.7rem;
+    }
+    
+    .comment-form-comment textarea, #commentform input[type="text"] {
         width: 100%;
     }
 
