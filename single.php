@@ -27,7 +27,13 @@
         <h1>
             <?php the_title(); ?>
             <span>
-                2025年3月16日 (デザイン)
+                <?php the_time('Y年m月d日'); ?> 
+                (<?php
+                    $categories = get_the_category();
+                    if (!empty($categories)) {
+                        echo esc_html($categories[0]->name);
+                    }
+                ?>)
             </span>
             <div id="eyecatch">
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
