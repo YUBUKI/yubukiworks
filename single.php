@@ -67,6 +67,9 @@
                 }
             }
         ?>
+
+        <div id="tohome">
+            <a href="/">HOME</a>
         </div>
 
         <div id="share">
@@ -81,12 +84,6 @@
                 <img src="/wp-content/themes/YUBUKIWORKS/images/share_line.png" alt="LINEへ投稿をシェアする">
             </a>
         </div>
-
-        <?php
-        if (comments_open() || get_comments_number()) {
-            comments_template();
-        }
-        ?>
 
     </main>
 

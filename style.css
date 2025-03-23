@@ -204,12 +204,24 @@ main#single article {
     margin: 0 20px;
 }
 
-/* HEADLINE 2 */
+/* HEADLINE */
 main#single h2 {
     margin: 40px 0 25px 0;
     padding: 40px 0 0 0;
     border-top: 1px dotted #ddd;
     font-size: 0.95rem;
+}
+main#single h2 strong {
+    border-left: 4px solid #fab001;
+    padding: 5px 0 5px 16px;
+}
+
+main#single h3 {
+    margin: 40px 0 10px 0;
+}
+main#single h3 strong {
+    border-left: 3px solid #ddd;
+    padding: 3px 0 3px 12px;
 }
 
 /* TEXT */
@@ -219,9 +231,13 @@ main#single p {
 }
 
 /* LIST */
-main#single ul {
-    margin: 0 0 25px 30px;
-    font-size: 0.8rem;
+main#single ul,
+main#single ol {
+    margin: 0 0 25px 20px;
+    padding: 20px 20px 10px 30px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    font-size: 0.72rem;
 }
 main#single li {
     list-style: disc;
@@ -238,19 +254,25 @@ main#single #listicle a {
     color: #333;
 }
 main#single #listicle i {
+    margin: 0 5px 0 0;
     color: #fab001;
 }
 
 /* SHARE */
 main#single #share {
     margin: 40px 0 0 0;
-    padding: 40px 0 0 0;
+    padding: 35px 0 15px 0;
     border-top: 1px dotted #ddd;
     text-align: center;
 }
 main#single #share img {
     width: 25px;
     margin: 0 5px;
+}
+
+main#single #tohome {
+    margin: 40px 0 0 0;
+    text-align: center;
 }
 
 /* COMMENT */
@@ -769,6 +791,9 @@ footer span {
         padding: 25px 0 0 0;
         font-size: 1rem;
     }
+    main#single h2 strong {
+        display: inline-block;
+    }
 
     main#single article {
         margin: 8px;
@@ -778,6 +803,14 @@ footer span {
         font-size: 0.9rem;
     }
 
+    main#single ul, main#single ol {
+        margin: 0 0 25px 0px;
+    }
+
+    main#single #listicle {
+        margin: 50px 0 0px 0;
+    }
+    
     #comments {
         width: 100%;
         margin: 30px auto 30px auto;
