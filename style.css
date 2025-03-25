@@ -209,11 +209,15 @@ main#single h2 {
     margin: 40px 0 25px 0;
     padding: 40px 0 0 0;
     border-top: 1px dotted #ddd;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
 }
-main#single h2 strong {
-    border-left: 4px solid #fab001;
-    padding: 5px 0 5px 16px;
+main#single h2 i {
+    color: #fff;
+    background: #333;
+    border-radius: 30px;
+    width: 26px;
+    line-height: 26px;
+    text-align: center;
 }
 
 main#single h3 {
@@ -235,13 +239,13 @@ main#single ul,
 main#single ol {
     margin: 0 0 25px 20px;
     padding: 20px 20px 10px 30px;
-    border: 1px solid #eee;
     border-radius: 6px;
+    background: #f8f8f8;
     font-size: 0.72rem;
 }
 main#single li {
     list-style: disc;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 }
 
 /* 記事一覧へ */
@@ -437,7 +441,6 @@ main#single .comment-form-url {
     padding: 20px 0;
     border-bottom: 1px dotted #ddd;
     vertical-align: top;
-    font-size: 0.6rem;
 }
 #profile dt {
     width: 30%;
@@ -728,8 +731,8 @@ footer span {
     header nav a {
         display: inline-block;;
         margin: 0;
-        padding: 5px;
-        font-size: 0.8rem;
+        padding: 5px 3px;
+        font-size: 0.75rem;
     }
 
     main#index h1, main#profile h1, span.position {
@@ -771,8 +774,9 @@ footer span {
     }
     main#index li h2 {
         padding: 3px 0px 10px 0;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: #333;
+        line-height: 1.4;
     }
 
     .position {
@@ -781,30 +785,37 @@ footer span {
 
     main#single h1 {
         margin: 0;
+        font-size: 0.95rem;
+        text-align: left;
+        line-height: 1.6;
+    }
+    main#single h1 span {
+        margin: 7px 0 0 0;
     }
     main#single #eyecatch img {
-        margin: 10px 0 0 0;
+        margin: 20px 0 10px 0;
     }
 
     main#single h2 {
         margin: 20px 0 15px 0;
         padding: 25px 0 0 0;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     main#single h2 strong {
         display: inline-block;
     }
 
     main#single article {
-        margin: 8px;
+        margin: 0px;
     }
 
     main#single p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     main#single ul, main#single ol {
-        margin: 0 0 25px 0px;
+        margin: -10px 0 25px 0px;
+        font-size: 0.80rem;
     }
 
     main#single #listicle {
