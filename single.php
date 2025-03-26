@@ -10,7 +10,7 @@
     <meta name="twitter:title" content="<?php the_title(); ?>">
     <meta name="twitter:description" content="とあるWebデザイナーのブログ">
     <meta name="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
-    <title><?php the_title(); ?>｜YUBUKI WORKS｜とあるWebデザイナーのブログ</title>
+    <title><?php the_title(); ?>｜YUBUKI WORKS｜とあるUIデザイナーのブログ</title>
 <?php get_template_part('parts/meta'); ?>
 </head>
 
@@ -44,6 +44,39 @@
             <?php the_content(); ?>
         </article>
         
+        <nav>
+            <a href="/webdesign">
+                <i class="fa-solid fa-code"></i> Web制作
+                <span>
+                    (2)
+                </span>
+            </a>
+            <a href="/photography">
+            <i class="fa-solid fa-camera-retro"></i> 旅と写真
+                <span>
+                    (0)
+                </span>
+            </a>
+            <a href="/chatgpt">
+                <i class="fas fa-project-diagram"></i> ChatGPT
+                <span>
+                    (1)
+                </span>
+            </a>
+            <a href="/books">
+                <i class="fa-solid fa-book-open"></i> 読んだ本
+                <span>
+                    (0)
+                </span>
+            </a>
+            <a href="/other">
+                <i class="fa-solid fa-file-pen"></i> その他
+                <span>
+                    (1)
+                </span>
+            </a>
+        </nav>
+        
         <div id="listicle">
         <?php
             $categories = get_the_category();
@@ -54,8 +87,8 @@
                         echo '<i class="fa-solid fa-code"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">Web制作の記事一覧</a>';
                     } elseif ( $category->slug === 'photography' ) {
                         echo '<i class="fa-solid fa-camera-retro"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">旅と写真の記事一覧</a>';
-                    } elseif ( $category->slug === 'freelance' ) {
-                        echo '<i class="fa-solid fa-laptop"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">自由な生き方の記事一覧</a>';
+                    } elseif ( $category->slug === 'books' ) {
+                        echo '<i class="fa-solid fa-book-open"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">読んだ本の記事一覧</a>';
                     } elseif ( $category->slug === 'chatgpt' ) {
                         echo '<i class="fas fa-project-diagram"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">ChatPGTの記事一覧</a>';
                     } elseif ( $category->slug === 'other' ) {
@@ -69,20 +102,7 @@
         ?>
 
         <div id="tohome">
-            <a href="/">HOME</a>
-        </div>
-
-        <div id="share">
-            <a href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>" target="_blank" rel="noopener noreferrer">
-                <img src="/wp-content/themes/YUBUKIWORKS/images/share_x.png" alt="Xへ投稿をシェアする">
-            </a>
-            <a href="https://b.hatena.ne.jp/entry/?url=<?php the_permalink(); ?>" target="_blank" rel="noopener noreferrer">
-                <img src="/wp-content/themes/YUBUKIWORKS/images/share_hatebu.png" alt="はてなブックマークへ投稿をシェアする">
-            </a>
-
-            <a href="https://social-plugins.line.me/lineit/share?url=<?php the_permalink(); ?>" target="_blank" rel="noopener noreferrer">
-                <img src="/wp-content/themes/YUBUKIWORKS/images/share_line.png" alt="LINEへ投稿をシェアする">
-            </a>
+            <a href="/"><i class="fa-solid fa-house"></i> HOME</a>
         </div>
 
     </main>

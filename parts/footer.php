@@ -5,9 +5,13 @@
     </div>
 
     <footer class="scr-target">
-        <a href="/profile">プロフィール</a>
-        ｜
-        <a href="/contact">お問い合わせ</a>
+        <a href="https://x.com/yubukiworks" target="_blank">
+            <img src="/wp-content/themes/YUBUKIWORKS/images/xlogo.png" alt="X">
+        </a>
+        <a href="https://b.hatena.ne.jp/YubukiWorks/bookmark" target="_blank">
+            <img src="/wp-content/themes/YUBUKIWORKS/images/hatena.png" alt="はてなブックマーク">
+        </a>
+        <a href="/contact"><i class="fa-solid fa-envelope-open-text"></i></a>
         <span>&copy; 2025 YUBUKI</span>
     </footer>
 

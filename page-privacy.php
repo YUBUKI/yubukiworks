@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index,follow">
     <meta name="description" content="YUBUKI WORKSはとあるフリーWebデザイナーがWeb制作・旅と写真・自由な生き方・ChatGPTについて書くブログです。">
-    <title>プライバシーポリシー｜YUBUKI WORKS｜とあるWebデザイナーのブログ</title>
+    <title>プライバシーポリシー｜YUBUKI WORKS｜とあるUIデザイナーのブログ</title>
 <?php get_template_part('parts/head'); ?>
 </head>
 
@@ -78,7 +78,6 @@
         <br>
         
         <p>
-            住所：千葉県習志野市<br>
             屋号：YUBUKI WORKS<br>
             Eメールアドレス：mail@yubukiworks.com
         </p>

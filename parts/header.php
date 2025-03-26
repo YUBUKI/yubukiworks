@@ -1,6 +1,6 @@
         <a href="/" class="logo">
             <img src="/wp-content/themes/YUBUKIWORKS/images/logo.png" alt="YUBUKI WORKS">
-            <span>とあるWebデザイナーのブログ</span>
+            <span>とあるUIデザイナーの気ままなブログ</span>
         </a>
 
         <nav>
@@ -14,22 +14,11 @@
                     ?>)
                 </span>
             </a>
-            
             <a href="/photography">
-                <i class="fa-solid fa-camera-retro"></i> 旅と写真
+            <i class="fa-solid fa-camera-retro"></i> 旅と写真
                 <span>
                     (<?php
                     $category_id = 3; // 取得したいカテゴリのID
-                    $category = get_category($category_id);
-                    echo '' . $category->count;
-                    ?>)
-                </span>
-            </a>
-            <a href="/freelance">
-                <i class="fa-solid fa-laptop"></i> 自由な生き方
-                <span>
-                    (<?php
-                    $category_id = 4; // 取得したいカテゴリのID
                     $category = get_category($category_id);
                     echo '' . $category->count;
                     ?>)
@@ -40,6 +29,16 @@
                 <span>
                     (<?php
                     $category_id = 5; // 取得したいカテゴリのID
+                    $category = get_category($category_id);
+                    echo '' . $category->count;
+                    ?>)
+                </span>
+            </a>
+            <a href="/books">
+                <i class="fa-solid fa-book-open"></i> 読んだ本
+                <span>
+                    (<?php
+                    $category_id = 4; // 取得したいカテゴリのID
                     $category = get_category($category_id);
                     echo '' . $category->count;
                     ?>)
