@@ -44,65 +44,58 @@
             <?php the_content(); ?>
         </article>
         
-        <nav>
+        <div id="btmnv">
+            <a href="/"><i class="fa-solid fa-house"></i> HOME</a>
             <a href="/webdesign">
                 <i class="fa-solid fa-code"></i> Web制作
                 <span>
-                    (2)
+                    (<?php
+                    $category_id = 2; // 取得したいカテゴリのID
+                    $category = get_category($category_id);
+                    echo '' . $category->count;
+                    ?>)
                 </span>
             </a>
             <a href="/photography">
             <i class="fa-solid fa-camera-retro"></i> 旅と写真
                 <span>
-                    (0)
+                    (<?php
+                    $category_id = 3; // 取得したいカテゴリのID
+                    $category = get_category($category_id);
+                    echo '' . $category->count;
+                    ?>)
                 </span>
             </a>
             <a href="/chatgpt">
                 <i class="fas fa-project-diagram"></i> ChatGPT
                 <span>
-                    (1)
+                    (<?php
+                    $category_id = 5; // 取得したいカテゴリのID
+                    $category = get_category($category_id);
+                    echo '' . $category->count;
+                    ?>)
                 </span>
             </a>
             <a href="/books">
                 <i class="fa-solid fa-book-open"></i> 読んだ本
                 <span>
-                    (0)
+                    (<?php
+                    $category_id = 4; // 取得したいカテゴリのID
+                    $category = get_category($category_id);
+                    echo '' . $category->count;
+                    ?>)
                 </span>
             </a>
             <a href="/other">
                 <i class="fa-solid fa-file-pen"></i> その他
                 <span>
-                    (1)
+                    (<?php
+                    $category_id = 6; // 取得したいカテゴリのID
+                    $category = get_category($category_id);
+                    echo '' . $category->count;
+                    ?>)
                 </span>
             </a>
-        </nav>
-        
-        <div id="listicle">
-        <?php
-            $categories = get_the_category();
-            if ( ! empty( $categories ) ) {
-                foreach ( $categories as $category ) {
-                    // カテゴリのスラッグで条件分岐
-                    if ( $category->slug === 'webdesign' ) {
-                        echo '<i class="fa-solid fa-code"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">Web制作の記事一覧</a>';
-                    } elseif ( $category->slug === 'photography' ) {
-                        echo '<i class="fa-solid fa-camera-retro"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">旅と写真の記事一覧</a>';
-                    } elseif ( $category->slug === 'books' ) {
-                        echo '<i class="fa-solid fa-book-open"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">読んだ本の記事一覧</a>';
-                    } elseif ( $category->slug === 'chatgpt' ) {
-                        echo '<i class="fas fa-project-diagram"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">ChatPGTの記事一覧</a>';
-                    } elseif ( $category->slug === 'other' ) {
-                        echo '<i class="fa-solid fa-file-pen"></i><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">その他の記事一覧</a>';
-                    } else {
-                        // どの条件にも当てはまらなかった場合（任意）
-                        echo '<p><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">▶ その他の記事を見る</a></p>';
-                    }
-                }
-            }
-        ?>
-
-        <div id="tohome">
-            <a href="/"><i class="fa-solid fa-house"></i> HOME</a>
         </div>
 
     </main>

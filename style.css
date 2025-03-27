@@ -275,136 +275,22 @@ main#single #listicle i {
     color: #fab001;
 }
 
-/* SHARE */
-main#single #share {
+/* 下部ナビ */
+#btmnv {
     margin: 40px 0 0 0;
-    padding: 35px 0 15px 0;
+    padding: 40px 0 20px 0;
     border-top: 1px dotted #ddd;
     text-align: center;
-}
-main#single #share img {
-    width: 25px;
-    margin: 0 5px;
+    font-size: 0.84rem;
 }
 
-main#single #tohome {
-    margin: 40px 0 0 0;
-    text-align: center;
-}
-
-/* COMMENT */
-#comments {
-    width: 80%;
-    margin: 50px auto 30px auto;
-    padding: 20px;
-    background: #f8fafd;
-    border: 1px solid #f1f3f4;
-    border-radius: 8px;
-}
-
-main#single #comments h2 {
-    margin: 0 0 20px 0;
-    padding: 0;
-    border: none;
-    font-size: 0.7rem;
-}
-
-main#single #comments li {
-    list-style: none;
-}
-
-#comments .avatar {
-    margin: 0 10px;
-    border-radius: 4px;
-    vertical-align: middle;
-}
-#comments .comment-author {
-    display: inline;
-}
-
-#comments .comment-meta {
-    display: inline;
-}
-
-#comments .fn {
-    margin: 0 20px 0 0;
+#btmnv a {
+    margin: 0 30px 0 0;
     font-weight: bold;
+    color: #333;
 }
-#comments .says {
-    display: none;
-}
-main#single #comments p {
-    margin: 20px 0 0 0;
-    font-size: 0.65rem;
-}
-
-#comments .reply {
-    margin: 10px 0 30px 0;
-    padding: 0 0 20px;
-    border-bottom: 1px dotted #ddd;
-    text-align: right;
-}
-#comments .reply a {
-    display: inline-block;
-    padding: 1px 15px;
-    border-radius: 2px;
-    background: #19448e;
-    color: #fff;
-}
-
-#reply-title {
-    font-size: 0.7rem;
-}
-.required-field-message {
-    display: none;
-}
-
-main#single .comment-form-comment,
-main#single .comment-form-author,
-main#single .comment-form-email, 
-main#single .comment-form-url {
-    display: flex;
-    align-items: anchor-center;
-    width: 90%;
-    margin: 20px auto 0 auto !important;
-    font-size: 0.65rem;
-}
-#commentform label {
-    width: 70px;
-    font-size: 0.6rem;
-    color: #999;
-}
-
-.comment-form-comment textarea,
-#commentform input[type="text"] {
-    display: block;
-    width: 80%;
-    margin: auto;
-    padding: 15px;
-    border: 1px solid #f1f3f4;
-    border-radius: 8px;
-}
-#commentform input[type="text"] {
-    padding: 10px;
-}
-
-.comment-form-cookies-consent {
-    text-align: center;
-}
-.comment-form-cookies-consent input {
-    position: relative;
-    top: 2px;
-}
-
-.form-submit {
-    text-align: center;
-}
-.form-submit input[type="submit"] {
-    display: inline-block;
-    padding: 5px 20px;
-    border-radius: 2px;
-    background: #19448e;
-    color: #fff;
+#btmnv a i {
+    color: #fab001;
 }
 
 
